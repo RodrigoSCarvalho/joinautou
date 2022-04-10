@@ -20,7 +20,6 @@ public class ColaboradorController {
     @GetMapping("/colaborador")
     public @ResponseBody
     List<Colaborador> getAllColaboradores() {
-        // This returns a JSON or XML with the users
         return this.colaboradorService.getAllColaboradores();
     }
 

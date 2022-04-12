@@ -30,5 +30,11 @@ public class ReacaoController {
         return new ResponseEntity(HttpStatus.CREATED);
     }
 
+    @PostMapping("/reacao")
+    public ResponseEntity addReacao(@RequestBody Reacao reacao){
+        this.reacaoService.addReacao(reacao);
+        return new ResponseEntity<>(reacao, HttpStatus.CREATED);
+    }
+
 
 }

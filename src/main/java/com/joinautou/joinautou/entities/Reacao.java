@@ -73,6 +73,22 @@ public class Reacao implements Serializable {
         this.data_de_envio = data_de_envio;
     }
 
+    public String getMotivo() {
+        return motivo;
+    }
+
+    public void setMotivo(String motivo) {
+        this.motivo = motivo;
+    }
+
+    public Integer getPontos() {
+        return pontos;
+    }
+
+    public void setPontos(Integer pontos) {
+        this.pontos = pontos;
+    }
+
     @Override
     public String toString() {
         return "Reacao{" +
@@ -80,6 +96,8 @@ public class Reacao implements Serializable {
                 ", colaborador_remetente=" + colaborador_remetente +
                 ", colaborador_destinatario=" + colaborador_destinatario +
                 ", reacao=" + reacao +
+                ", motivo='" + motivo + '\'' +
+                ", pontos=" + pontos +
                 ", data_de_envio=" + data_de_envio +
                 '}';
     }

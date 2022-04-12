@@ -11,4 +11,6 @@ public interface ReacaoService {
     List<Reacao> getAllReacoes();
 
     void addNewReacao(Long colaborador_remetente_id, Long idReacao, Long colaborador_destinatario_id);
+
+    void addReacao(Reacao reacao);
 }

@@ -29,4 +29,9 @@ public class ReacaoServiceImpl implements ReacaoService {
         LocalDate localDate = LocalDate.now();
         reacaoRepository.addNewReacao(localDate,colaborador_destinatario_id, colaborador_remetente_id, idReacao);
     }
+
+    @Override
+    public void addReacao(Reacao reacao) {
+        reacaoRepository.save(reacao);
+    }
 }

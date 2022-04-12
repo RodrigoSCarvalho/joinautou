@@ -26,6 +26,11 @@ public class Reacao implements Serializable {
     @JoinColumn(name = "tipo_reacao_id", referencedColumnName = "id")
     private TipoReacao reacao;
 
+    @Column(length = 256)
+    private String motivo;
+
+    private Integer pontos ;
+
     private Date data_de_envio;
 
     public Long getId() {
